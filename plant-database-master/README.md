@@ -8,9 +8,10 @@
     Plant database with information regarding classification, features and maintenance.
 </p>
 
-## About
+## Disclaimer:
+This is the original work of [Victor Rachieru](https://github.com/vrachieru/plant-database)
 
-disclaimer: This is the original work of [Victor Rachieru]{https://github.com/vrachieru/plant-database}
+## About
 This is a ripoff of the HHCC Xiaomi Flower Care plant database.
 
 The Mi Flora plant sensor is an amazing and affordable little BT Low energy plant sensor that measures the soil temperature, moisture and conductivity along with the light levels.
