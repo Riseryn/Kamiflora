@@ -11,7 +11,6 @@ from kalliope.core.NeuronModule import NeuronModule , MissingParameterException
 from kalliope.core.Utils import Utils
 from google_trans_new import google_translator 
 
-
 class Kamiflora(NeuronModule):    
     def __init__(self, **kwargs):
         super(Kamiflora, self).__init__(**kwargs)        
@@ -22,9 +21,11 @@ class Kamiflora(NeuronModule):
         self.secure =       kwargs.get('secure', None)
         self.user =         kwargs.get('user', None)    
         self.password =     kwargs.get('password', None)
+        #Certificate management not yet implemented #########
         self.clt_certfile = kwargs.get('clt_certfile', None)
         self.serv_ca_cert = kwargs.get('serv_ca_cert', None)
         self.clt_ca_key =   kwargs.get('clt_ca_key', None)
+        #####################################################
         self.start_time =   kwargs.get('start_time', None)
         self.end_time =     kwargs.get('end_time', None)
         self.language =     kwargs.get('language', None)
@@ -35,12 +36,6 @@ class Kamiflora(NeuronModule):
         self.time_now =     self.convert_str_to_time(datetime.strftime(datetime.now(),"%H:%M"))
 
 
-        # print("self.clt_certfile = ",self.clt_certfile ) 
-        # print("Kamiflora: self.serv_ca_cert = ",self.serv_ca_cert )  
-        # print("self.clt_ca_key = ",self.clt_ca_key)   
-        
-        
-
         if self.start_time:
             self.start_time = self.convert_str_to_time(self.start_time)
 
@@ -49,8 +44,7 @@ class Kamiflora(NeuronModule):
 
         # check if parameters have been provided
         if self.Is_parameters_ok(): 
-            # self.say("lancement de kamiflora")
-            
+                     
             if self.time_now > self.start_time and self.time_now < self.end_time:
                 kc = Kamiconnect(self.broker_url, self.broker_port, self.user, self.password, self.secure, self.clt_certfile, self.serv_ca_cert, self.clt_ca_key)
 
@@ -74,8 +68,7 @@ class Kamiflora(NeuronModule):
                                 localized_message = self.translate_message(result_comparison, self.language)
                                 self.say(localized_message)
                             except Exception as e :
-                                print(str(e))
-                
+                                print(str(e))               
                
     
     
@@ -93,12 +86,13 @@ class Kamiflora(NeuronModule):
         for key in keys:
             try:
                 _element = _element[key]
-                # print("_element ",_element)
+                
             except KeyError:
                 message = "unable to read sensor"
                 localized_message = self.translate_message(message, self.language)
                 self.say(localized_message)
                 return False
+            
         return True
 
 
@@ -131,9 +125,9 @@ class Kamiflora(NeuronModule):
         if self.language is None:
             raise MissingParameterException ("This neuron require a language parameter")
 
-        if self.secure == "cert":
-            if self.clt_certfile == None or self.serv_ca_cert == None or  self.clt_ca_key == None:
-                raise MissingParameterException ("secure parameter is set to cert but there is missing parameters.\nCheck your parameters clt_certfile, serv_ca_cert, clt_ca_key.")
+        #if self.secure == "cert":
+            #if self.clt_certfile == None or self.serv_ca_cert == None or  self.clt_ca_key == None:
+                #raise MissingParameterException ("secure parameter is set to cert but there is missing parameters.\nCheck your parameters clt_certfile, serv_ca_cert, clt_ca_key.")
         
         if self.end_time is None or self.end_time == "" or self.start_time is None or self.start_time == "" :
             if self.latitude is None or self.latitude =="" or self.longitude is None or self.longitude == "" or self.altitude is None or self.altitude =="":

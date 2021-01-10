@@ -9,8 +9,6 @@ class Kamimessage :
         self.message = dict_message
         self.min_battery = min_battery
         self.result = ""
-        
-        # print("entree dans kamimessage à : ",datetime.strftime(datetime.now(),"%H:%M:%S"))
 
 #     extract data from sensors   
   
@@ -20,7 +18,6 @@ class Kamimessage :
             with open(FilePath) as json_file:
                 data = json.load(json_file)
                 ref_parameters = data["parameter"]
-                # print("ref_parameters ",ref_parameters)
                 return ref_parameters               
         except Exception as e :
             print(str(e))

@@ -34,5 +34,6 @@ class Kamisun:
         long = len(heurel)
         fin = long - 14
         self.time_rise = heurel[fin:long-10]
+        
 
          
