@@ -1,0 +1,24 @@
+- name: kamiflora
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  become: true
+ 
+  tasks: 
+    - name: "miflora daemon"
+      get_url:
+        url: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
+        dest: /opt
+        mode: '0440'
+    
+    - name: "google translate"
+      pip:
+        name: google_trans_new
+        executable: pip3
+        
+    - name: "ephem"
+      pip:
+        name: ephem
+        executable: pip3   
+    
+
