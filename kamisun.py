@@ -13,8 +13,6 @@ class Kamisun:
         self.longitude = longitude
         self.altitude    =  altitude
         
-        # utc = pytz.utc
-        
         city = ephem.Observer()
         city.lat    = self.latitude
         city.lon =  self.longitude
