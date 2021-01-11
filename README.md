@@ -5,6 +5,12 @@ This Neuron allows Kalliope to control the Xiaomi Mi Plant (new name of Xiaomi M
 
 Kalliope can thus warn you if one of your plants requires your care.
 
+## Third parties script
+This neuron use the following scripts :
+[google_trans_new](https://github.com/lushan88a/google_trans_new) by lushan88a
+[miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) by Thomas Dietrich
+
+
 ## Prerequisites
 This neuron require python 3.
 
@@ -50,6 +56,7 @@ To configure miflora-mqtt-daemon follow the instructions on the [miflora-mqtt-da
         <td>none</td>
         <td>string</td>
         <td>set Secure to passwd if you are using user/password protection for youe broker. You must set user and password parameters.
+            Don't forget to configure the miflora-mqtt-daemon config.ini with this value.
     </td>
    </tr>
     <tr> 
@@ -74,7 +81,7 @@ To configure miflora-mqtt-daemon follow the instructions on the [miflora-mqtt-da
         <td>end_time</td>
         <td>none</td>
         <td>string</td>
-        <td>The time at which Kalliope stop to report the data from the sensors. If this parameter is not provided, the location parameters (latitude, longitude and altitude) must be entered for a sunset time calculation. The sunset time will then become the end_time.</td>
+        <td>The time at which Kalliope stop to report the data from the sensors. If this parameter is not provided, the location parameters (latitude, longitude and altitude) must be entered for a sunset time calculation. The sunset time at your locationwill then become the end_time.</td>
    </tr>
    <tr> 
         <td>latitude</td>
