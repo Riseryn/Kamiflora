@@ -7,9 +7,9 @@ Kalliope can thus warn you if one of your plants requires your care.
 
 ## Third parties script
 This neuron use the following scripts :
-[google_trans_new](https://github.com/lushan88a/google_trans_new) by lushan88a
-[miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) by Thomas Dietrich
-[Plant-database](https://github.com/vrachieru/plant-database) by Victor Rachieru
+[google_trans_new](https://github.com/lushan88a/google_trans_new) by lushan88a\n
+[miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) by Thomas Dietrich\n
+[Plant-database](https://github.com/vrachieru/plant-database) by Victor Rachieru\n
 [ephem](https://pypi.org/project/ephem/) by  Brandon Rhodes
 
 ## Prerequisites
