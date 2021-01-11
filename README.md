@@ -56,7 +56,7 @@ To configure miflora-mqtt-daemon follow the instructions on the [miflora-mqtt-da
         <td>secure</td>
         <td>none</td>
         <td>string</td>
-        <td>set Secure to passwd if you are using user/password protection for youe broker. You must set user and password parameters.
+        <td>set Secure to passwd if you are using user/password protection for your broker. You must set user and password parameters.
             Don't forget to configure the miflora-mqtt-daemon config.ini with this value.
     </td>
    </tr>
@@ -141,8 +141,8 @@ Accepts fr, de, en, etc but not Fr or FR</td>
 ## Synapses example 
 
 In this example Kalliope will check your sensors every two hours.
-The broker does not require a password (secure: False).
-Reports will start at 8:35 am and end at sunset (end_time: "").
+The broker does not require a password.
+Reports will start at 8:35 am and end at sunset.
 You will be notified when the battery is at 5%.
 The language of the response is French ("fr").
 
@@ -154,8 +154,7 @@ The language of the response is French ("fr").
       neurons:  
           - kamiflora:      
               broker_url: "192.168.10.150"          
-              broker_port: "1883"          
-              secure : "False"           
+              broker_port: "1883"                    
               start_time: "08:35:00"                   
               latitude: "48.07807894349862"          
               longitude: "-1.6699218750000002"          
