@@ -26,10 +26,9 @@ The [miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) m
 
 After installing Kamiflora:
 
-``sudo apt install git python3 python3-pip bluetooth bluez``
-
-``cd / opt / miflora-mqtt-daemon
-sudo pip3 install -r requirements.txt``
+``sudo apt install git python3 python3-pip bluetooth bluez``<br>
+``cd / opt / miflora-mqtt-daemon``<br>
+``sudo pip3 install -r requirements.txt``<br>
 
 To configure miflora-mqtt-daemon follow the instructions on the [miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) page.
 
