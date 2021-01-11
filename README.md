@@ -35,13 +35,13 @@ To configure miflora-mqtt-daemon follow the instructions on the [miflora-mqtt-da
          <td>Comments</td>
     </tr>
         <td>broker_url</td>
-        <td>none</td>
+        <td>127.0.0.1</td>
         <td>string</td>
         <td>The broker's address can be internal (broker_url="192.168.1.184") or external (broker_url="iot.eclipse.org"</td>
    </tr>
    <tr> 
         <td>broker_port</td>
-        <td>none</td>
+        <td>1883</td>
         <td>string</td>
         <td>Indicate the port used by your broker. Usually port 1883</td>
    </tr>
@@ -49,9 +49,7 @@ To configure miflora-mqtt-daemon follow the instructions on the [miflora-mqtt-da
         <td>secure</td>
         <td>none</td>
         <td>string</td>
-        <td>Secure can be False,passwd or cert. False means that your broker is not protected by user / password (zero security).
-passwd means that your broker is protected by user/password and that you MUST fill in the user and password parameters(medium scurity) and
-cert means that your broker require a certificate (higher security).
+        <td>set Secure to passwd if you are using user/password protection for youe broker. You must set user and password parameters.
     </td>
    </tr>
     <tr> 
@@ -70,7 +68,7 @@ cert means that your broker require a certificate (higher security).
         <td>start_time</td>
         <td>none</td>
         <td>string</td>
-        <td>The time at which Kalliope begins to report the data from the sensors. If this parameter is not provided, the location parameters (latitude, longitude and altitude) must be entered for a sunrise time calculation. The sunrise time will then become the start_time.</td>
+        <td>The time at which Kalliope begins to report the data from the sensors. If this parameter is not provided, the location parameters (latitude, longitude and altitude) must be entered for a sunrise time calculation. The sunrise time at your location will then become the start_time.</td>
    </tr>
    <tr> 
         <td>end_time</td>
