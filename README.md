@@ -88,7 +88,7 @@ To configure miflora-mqtt-daemon follow the instructions on the [miflora-mqtt-da
         <td>none</td>
         <td>string</td>
         <td>your latitude, longitude and altitude can be obtained by this [site](https://www.mapsdirections.info/fr/coordonnees-sur-google-map.html). </td>
-   </tr>
+   </tr> 
    <tr> 
         <td>longitude</td>
         <td>none</td>
