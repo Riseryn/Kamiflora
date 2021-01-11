@@ -19,6 +19,11 @@
     - name: "ephem"
       pip:
         name: ephem
-        executable: pip3   
+        executable: pip3 
+        
+    - name: merge files in json folders
+      script: merge_json_folders.py 
+      args:
+        executable: python3
     
 
