@@ -13,7 +13,7 @@
     
     - name: "google translate"
       pip:
-        name: google_trans_new
+        name: google-trans-new
         executable: pip3
         
     - name: "ephem"
