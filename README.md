@@ -22,7 +22,7 @@ You must have an MQTT broker like Mosquitto installed. You can learn more about 
 ## Installation
 
 ``cd your/starter_kit/resources/neurons``<br>
-``kalliope install --git-url https://github.com//Riseryn/Kamiflora.git``<br>
+``kalliope install --git-url https://github.com/Riseryn/Kamiflora.git``<br>
 ``cd kamiflora``<br>
 ``ansible-playbook install.yml -K``<br>
 
