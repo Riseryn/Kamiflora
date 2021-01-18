@@ -20,7 +20,11 @@ You must have an MQTT broker like Mosquitto installed. You can learn more about 
 
 
 ## Installation
+``cd your/starter_kit/resources/neurons``
 ``kalliope install --git-url https://github.com//Riseryn/Kamiflora.git``
+``cd kamiflora``
+``ansible-playbook install.yml -K``
+
 
 The [miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) module by Thomas Dietrich will be installed. This module will read the data from your Mi Plant sensors and send them to your broker so that Kalliope can access them.
 
