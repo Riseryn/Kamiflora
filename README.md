@@ -22,10 +22,8 @@ You also, obviously, need to have bluetooth enabled on your system.
 
 ## Installation
 
-``cd your/starter_kit/resources/neurons``<br>
+``cd your/starter_kit``<br>
 ``kalliope install --git-url https://github.com/Riseryn/Kamiflora.git``<br>
-``cd kamiflora``<br>
-``ansible-playbook install.yml -K``<br>
 
 The installation can take quite a long time...Be patient...
 
