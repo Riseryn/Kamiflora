@@ -18,7 +18,7 @@
       ansible.builtin.command:
         cmd: python3 merge_json_folders.py 
         
-   - name: "miflora daemon"
+    - name: "miflora daemon"
       ansible.builtin.git:
        repo: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
        dest: /opt
