@@ -5,22 +5,22 @@
   become: true
  
   tasks:
-    - name: "Install all python lib"
-      pip:
-        name: "{{ item }}"
-      loop:
-        - ephem
-        - google_trans_new
+    #- name: "Install all python lib"
+     # pip:
+      # name: "{{ item }}"
+     # loop:
+      #  - ephem
+      #  - google_trans_new
         
     - name: merge files in json folders
       script: merge_json_folders.py 
       args:
         executable: python3 
         
-    - name: "miflora daemon"
-      ansible.builtin.git:
-        repo: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
-        dest: /opt
+    #- name: "miflora daemon"
+   #   ansible.builtin.git:
+    #    repo: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
+    #    dest: /opt
         
      
     
