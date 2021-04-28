@@ -14,7 +14,7 @@
       #  - google_trans_new
         
     - name: merge files in json folders       
-      script: resources/neurons/kamiflora/merge_json_folders.py 
+      script: ./merge_json_folders.py 
       args:
         executable: python3 
         
