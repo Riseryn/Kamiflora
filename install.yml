@@ -6,22 +6,22 @@
   debugger: always
  
   tasks:
-    #- name: "Install all python lib"
-     # pip:
-      # name: "{{ item }}"
-     # loop:
-      #  - ephem
-      #  - google_trans_new
+    - name: "Install all python lib"
+      pip:
+       name: "{{ item }}"
+      loop:
+       - ephem
+       - google_trans_new
         
    
     - name: merge files in json folders
       ansible.builtin.command:
         cmd: python3 merge_json_folders.py 
         
-    #- name: "miflora daemon"
-   #   ansible.builtin.git:
-    #    repo: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
-    #    dest: /opt
+   - name: "miflora daemon"
+      ansible.builtin.git:
+       repo: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
+       dest: /opt
         
      
     
