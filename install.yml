@@ -9,7 +9,6 @@
       ansible.builtin.git:
         repo: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
         dest: /opt
-        mode: '0440'
     
     - name: "google translate"
       pip:
