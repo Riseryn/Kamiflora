@@ -6,12 +6,19 @@
   debugger: always
  
   tasks:
-    - name: "Install all python lib"
+    - name: "Install all python lib with pip"
       pip:
        name: "{{ item }}"
       loop:
        - ephem
        - google_trans_new
+       
+    - name: "Install all python lib with apt"
+      apt:
+       name: "{{ item }}"
+      loop:
+       - bluetooth
+       - bluez   
         
    
     - name: merge files in json folders
