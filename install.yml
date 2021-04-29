@@ -3,17 +3,17 @@
   gather_facts: no
   connection: local
   become: true
-  debugger: always
+  #debugger: always
 
   tasks:
-    - name: "Install all python lib with pip"
+    - name: "Install python lib with pip"
       pip:
        name: "{{ item }}"
       loop:
        - ephem
        - google_trans_new
 
-    - name: "Install all python lib with apt"
+    - name: "Install python lib with apt"
       apt:
        name: "{{ item }}"
       loop:
