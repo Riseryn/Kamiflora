@@ -29,14 +29,17 @@ The installation can take quite a long time...Be patient...
 
 The [miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) module by Thomas Dietrich will be installed. This module will read the data from your Mi Plant sensors and send them to your broker so that Kalliope can access them.
 
-#If the installation is stuck at this step:<br>
+If the installation is stuck at this step:
+
 ``
 PLAY [kamiflora] ***************************************************************
 
 TASK [Install python lib with pip] *********************************************
 ``
+
 interrupt it with ctrl + c
 then 
+
 ``
 cd resources/neurons/kamiflora
 ansible-playbook install.yml -K
