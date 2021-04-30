@@ -39,7 +39,6 @@ TASK [Install python lib with pip] *********************************************
 <br>
 interrupt it with ctrl + c
 then <br>
-
 ``
 cd resources/neurons/kamiflora
 ansible-playbook install.yml -K
