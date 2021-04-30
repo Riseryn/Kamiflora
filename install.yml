@@ -4,7 +4,6 @@
   connection: local
   become: true
   become_method: sudo
-  #debugger: always
       
   tasks:
     - name: "Install python lib with pip"
