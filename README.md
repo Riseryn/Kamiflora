@@ -18,7 +18,7 @@ This neuron is heavy on disk space needed.<br>
 you need about 1 GB in total.<br>
 
 You must have an MQTT broker like Mosquitto installed. You can learn more about Mosquitto  on the project's [Github page](https://github.com/eclipse/mosquitto) or on the [Mosquitto website](https://mosquitto.org/).
-You also, obviously, need to have bluetooth enabled on your system.
+You also need to have bluetooth enabled on your system.
 
 
 
