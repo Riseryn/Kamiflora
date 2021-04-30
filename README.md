@@ -13,7 +13,9 @@ This neuron use the following scripts :
 - [ephem](https://pypi.org/project/ephem/) by  Brandon Rhodes
 
 ## Prerequisites
-This neuron require python 3.
+This neuron require python 3.<br>
+This neuron is heavy on disk space needed.<br>
+you need about 1 GB in total.<br>
 
 You must have an MQTT broker like Mosquitto installed. You can learn more about Mosquitto  on the project's [Github page](https://github.com/eclipse/mosquitto) or on the [Mosquitto website](https://mosquitto.org/).
 You also, obviously, need to have bluetooth enabled on your system.
@@ -25,7 +27,7 @@ You also, obviously, need to have bluetooth enabled on your system.
 ``cd your/kalliope_starter_kit``<br>
 ``kalliope install --git-url https://github.com/Riseryn/Kamiflora.git``<br>
 
-The installation can take quite a long time...Be patient...
+The download ( can take quite a long time (4 to 5 minutes)...Be patient...
 
 The [miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) module by Thomas Dietrich will be installed. This module will read the data from your Mi Plant sensors and send them to your broker so that Kalliope can access them.
 
