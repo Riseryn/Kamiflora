@@ -36,10 +36,9 @@ If the installation is stuck at this step:
 
 interrupt it with ctrl + c
 then <br>
-``
-cd resources/neurons/kamiflora
-ansible-playbook install.yml -K
-``
+``cd resources/neurons/kamiflora``<br>
+``ansible-playbook install.yml -K``<br>
+
 <br>
 After this command is succesful, installation is complete.
 Now configure miflora-mqtt-daemon.
