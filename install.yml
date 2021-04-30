@@ -3,7 +3,7 @@
   gather_facts: no
   connection: local
   become: true
-  debugger: always
+  #debugger: always
 
   tasks:
     - name: "Install python lib with pip"
