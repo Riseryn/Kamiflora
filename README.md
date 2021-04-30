@@ -22,7 +22,7 @@ You also, obviously, need to have bluetooth enabled on your system.
 
 ## Installation
 
-``cd your/starter_kit``<br>
+``cd your/kalliope_starter_kit``<br>
 ``kalliope install --git-url https://github.com/Riseryn/Kamiflora.git``<br>
 
 The installation can take quite a long time...Be patient...
