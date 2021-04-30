@@ -31,9 +31,8 @@ The [miflora-mqtt-daemon](https://github.com/ThomDietrich/miflora-mqtt-daemon) m
 
 If the installation is stuck at this step:
 <br>
-``
-PLAY  [kamiflora] ***************************************************************``<br>
-TASK [Install python lib with pip] *********************************************``<br>
+``PLAY  [kamiflora] ***************************************************************``<br>
+``TASK [Install python lib with pip] *********************************************``<br>
 
 interrupt it with ctrl + c
 then <br>
