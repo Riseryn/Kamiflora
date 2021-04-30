@@ -2,7 +2,6 @@
   hosts: localhost
   gather_facts: no
   connection: local
-  #command: authconfig --disablefingerprint --update
   become: true
   become_method: sudo
   #debugger: always
