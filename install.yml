@@ -5,7 +5,12 @@
   command: authconfig --disablefingerprint --update
   become: true
   #debugger: always
-
+  
+  pre_tasks:
+  - name: disable fingerprint checking that may be enabled; when enabled, causes ssh issues
+    command: authconfig --disablefingerprint --update
+    become: yes
+    
   tasks:
     - name: "Install python lib with pip"
       pip:
