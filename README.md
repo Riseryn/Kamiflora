@@ -35,8 +35,8 @@ If the installation is stuck at this step:
 PLAY [kamiflora] ***************************************************************
 
 TASK [Install python lib with pip] *********************************************
-``
-<br>
+``<br>
+
 interrupt it with ctrl + c
 then <br>
 ``
