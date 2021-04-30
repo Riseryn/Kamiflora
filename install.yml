@@ -3,7 +3,7 @@
   gather_facts: no
   connection: local
   become: true
-  #debugger: always
+  debugger: always
 
   tasks:
     - name: "Install python lib with pip"
@@ -25,9 +25,22 @@
        repo: https://github.com/ThomDietrich/miflora-mqtt-daemon.git
        dest: /opt/miflora-mqtt-daemon
 
+    - name: "Install requirements.txt"
+      pip:
+       requirements: /opt/miflora-mqtt-daemon/requirements.txt
+
     - name: "merge files in json folders"
       ansible.builtin.command:
         cmd: python3 merge_json_folders.py
+
+
+
+
+
+
+
+
+
 
 
 
