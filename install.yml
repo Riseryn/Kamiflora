@@ -4,6 +4,7 @@
   connection: local
   command: authconfig --disablefingerprint --update
   become: true
+  become_method: sudo
   #debugger: always
       
   tasks:
