@@ -33,7 +33,6 @@ If the installation is stuck at this step:
 <br>
 ``
 PLAY  [kamiflora] ***************************************************************
-
 TASK [Install python lib with pip] *********************************************
 ``<br>
 
